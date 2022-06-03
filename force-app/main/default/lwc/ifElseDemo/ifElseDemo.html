@@ -1,0 +1,38 @@
+<template>
+
+    <!--
+        <aura:if isTrue="" >
+        </aura:if>
+    -->
+    <div>
+        <template if:true={isjerry}>
+            <img src="https://upload.wikimedia.org/wikipedia/tr/a/a3/Jerry_Fare.png"
+                width="200"
+                height="200"
+            />
+        </template>
+
+        <template if:true={isTom}>
+                <img src="https://upload.wikimedia.org/wikipedia/tr/f/f6/Tom_Tom_and_Jerry.png"
+                width="200"
+                height="200"
+                />
+        </template>
+   
+        
+    </div>
+    <div class="slds-m-around_small">
+
+        <lightning-button label="Show Tom" 
+            variant="brand"
+            onclick={showTom} 
+        ></lightning-button>
+
+        <lightning-button label="Show Jerry" 
+            variant="brand"
+            onclick={showJerry} 
+        ></lightning-button>
+
+    </div>
+    
+</template>
